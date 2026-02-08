@@ -114,7 +114,7 @@ const noBtn = document.getElementById("noBtn");
 // Put your GIF filenames here (inside assets/)
 const yesGifs = [
   "assets/art-licking-GIF.gif",
-  "assets/hello-Kitty-Pink-GIF.gif",
+  "assets/Hello-Kitty-Pink-GIF.gif",
   "assets/I-Love-You-Valentine-GIF.gif",
   "assets/Proud-Of-You-GoodJob-GIF.gif"
 ];
@@ -166,4 +166,5 @@ noBtn?.addEventListener("mouseenter", (e) => {
   btn.style.top  = Math.floor(Math.random() * 40 - 20) + "px";
   status.textContent = "Nice try 😌";
 });
+
 
