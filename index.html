@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ava 💖 Be My Valentine</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <span>For <b>Ava</b> 💘</span>
+    </div>
+
+    <nav class="nav">
+      <a href="#reasons">Reasons I Love You</a>
+      <a href="#question">The Question</a>
+    </nav>
+
+    <button class="btn ghost" id="startBubblesBtn">Start bubbles</button>
+  </header>
+
+  <main class="wrap">
+
+    <!-- HERO -->
+    <section class="panel">
+      <p class="muted tiny">💌 a little website made just for you</p>
+      <h1 style="margin:0 0 10px;">Ava… I made you a whole website.</h1>
+      <p class="muted" style="max-width:65ch; line-height:1.55; margin:0 0 16px;">
+        I wanted something more personal than a text. Look through the reasons
+        and at the end answer a question.
+      </p>
+
+      <div class="row">
+        <a class="btn" href="#reasons">Go to reasons</a>
+        <a class="btn ghost" href="#question">Go to the question</a>
+      </div>
+    </section>
+
+    <!-- REASONS TAB -->
+    <section id="reasons">
+      <div class="sectionTitle">
+        <h2>Reasons I Love You</h2>
+        <span class="muted">bubbles = facts</span>
+      </div>
+
+      <div class="panel reasonsPanel">
+        <p class="muted" style="margin-top:0; line-height:1.55;">
+          Watch the bubbles pop up… each one is something I love about you.
+          <br><span class="tiny muted">Tip: click “Start bubbles” on the top bar if they’re paused.</span>
+        </p>
+
+        <div class="bubbleStage" id="bubbleStage" aria-label="Reasons bubbles"></div>
+
+        <div class="row" style="margin-top:12px;">
+          <button class="btn" id="moreBubblesBtn">More bubbles 💗</button>
+          <button class="btn ghost" id="pauseBubblesBtn">Pause</button>
+          <button class="btn ghost" id="clearBubblesBtn">Clear</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE QUESTION -->
+    <section id="question">
+      <div class="sectionTitle">
+        <h2>The Question</h2>
+        <span class="muted">deep breath…</span>
+      </div>
+
+      <div class="panel proposal">
+        <h2 class="big">Will you be my Valentine? 💖</h2>
+
+        <div class="buttons">
+          <button class="btn" id="yesBtn" type="button">YES 💘</button>
+          <button class="btn ghost" id="noBtn" type="button">No 🙃</button>
+        </div>
+
+        <p class="muted tiny" id="status" style="margin-top:12px;"></p>
+      </div>
+    </section>
+
+    <!-- GIFS REVEAL AFTER YES -->
+    
+
+    <footer class="footer">
+      <span class="muted tiny">Made with 💖 by <b> Ryan </b></span>
+      <span class="muted tiny">© <span id="year"></span></span>
+    </footer>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
